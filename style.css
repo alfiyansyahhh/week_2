@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+/* css navbar */
+.navbar{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #cccccc;
+    display: flex;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo h1{
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.primary-menu 
+{
+    width: 40%;
+    display: flex;
+    justify-content: center; 
+}
+.primary-menu .menu
+{
+    display: flex;
+    list-style-type: none;
+}
+.primary-menu .menu li{
+    margin: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4F5665;
+    cursor: pointer;
+}
+.primary-menu .menu li:hover {
+    color: #6A4029;
+    font-weight: 700;
+}
+.secondary-menu {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.secondary-menu .menu{
+    display: flex;
+    list-style-type: none;
+}
+.secondary-menu .menu li {
+    margin: 20px;
+    font-size: 10px;
+    cursor: pointer;
+   
+}
+.gmbr{
+top: 10px;
+margin-right: 20px;
+}
+.gambar{
+    border-radius: 100%;
+}
+
+/* css produk */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 10px;
+    padding: 100px;
+    justify-content: center;
+}
+
+.grid-container div {
+    text-align: center;
+}
+.grid-container h1 {
+    font-size: 30px;
+    margin-top: 65px;
+}
+.grid-container div p {
+    font-size: 20px;
+    color: #6A4029;   
+}       
+.daftar-menu{
+    position: relative;
+    width: 156px;
+    height: 212.41px;
+    top: 50px;
+    background-color: white;
+    box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);            padding: 10px 10px;
+    border-radius: 30px;
+}
+.img{
+    position: absolute;
+    border-radius: 100%;
+    width: 160px;
+    top: -90px;
+    right: 8px;               
+}
+
+/********** css signup ****************/
+
+/* navbar */
+.navbars{
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.logos{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.logos h1{
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+.secondary-menus {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.secondary-menus {
+    display: flex;
+    list-style-type: none;
+}
+.secondary-menus {
+    margin: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.secondary-menus a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logins{
+    background-color: #ffba33; 
+    padding: 10px 45px;
+    color: #6A4029;
+    border-radius: 100px;
+
+}
+
+/* css signup */
+.tulisan_signup{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: #6A4029;
+}
+.kotak_signup{
+    width: 350px;
+    background: white;
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+
+label{
+    font-size: 20px;
+    right: 30px;
+}
+
+.form_login{
+    box-sizing : border-box;
+    border: 1px solid #4F5665;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+
+}
+
+.signup{
+    background: #FFBA33;
+    box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+    border-radius: 20px;
+    color: #6A4029;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 20px 30px;           
+}
+.google{
+    background: white;
+    color: black;
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 23px 30px;
+    box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
+    font-weight: bold;
+    
+}
