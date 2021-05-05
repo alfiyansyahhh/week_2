@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produk</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+/* css navbar */
+        .navbar{
+            width: 100%;
+            background-color: white;
+            box-shadow: 1px 1px 10px #cccccc;
+            display: flex;
+        }
+        .logo{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+       
+        .logo h1{
+            font-size: 20px;
+            margin-left: 10px;
+            
+        }
+        .primary-menu 
+        {
+            width: 40%;
+            display: flex;
+            justify-content: center; 
+        }
+        .primary-menu .menu
+        {
+            display: flex;
+            list-style-type: none;
+        }
+        .primary-menu .menu li{
+            margin: 25px;
+            font-size: 20px;
+            font-weight: 400;
+            color: #4F5665;
+            cursor: pointer;
+        }
+        .primary-menu .menu li:hover {
+            color: #6A4029;
+            font-weight: 700;
+        }
+        .secondary-menu {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+        .secondary-menu .menu{
+            display: flex;
+            list-style-type: none;
+        }
+        .secondary-menu .menu li {
+            margin: 20px;
+            font-size: 10px;
+            cursor: pointer;
+           
+        }
+        .gambar{
+            border-radius: 200px;
+            -webkit-border-radius: 200px;
+            -moz-border-radius: 200px;
+        }
+/* css produk */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-gap: 10px;
+            padding: 100px;
+            justify-content: center;
+        }
+
+        .grid-container > div {
+            background-color: white;
+            text-align: center;
+        }
+        .grid-container > h1 {
+            font-size: 22px;
+        }
+        .grid-container > div p {
+            font-size: 17px;
+            color: #6A4029;
+        }
+        .gambar-menu{
+            top: 220px;
+        }
+        .img{
+            border-radius: 200px;
+            -webkit-border-radius: 200px;
+            -moz-border-radius: 200px;
+            
+        }
+        .daftar-menu{
+            width: 156px;
+            height: 212.41px;
+            left: 554px;
+            top: 311.66px;
+            background-color: white;
+            box-shadow: 1px 1px 10px  #cccccc;
+            padding: 10px 10px;
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- navbar -->
+      <div class="navbar">          
+            <div class="logo"> 
+                       <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="30" height="33" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="translate(-0.05) scale(0.00859375 0.0078125)"/>
+                        </pattern>
+                        <image id="image0" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEUAAABtSSRrPypgQCBVVStqQClrPyhqQCmAQEBrQClqQCpqPylpQClqQClqQClqQClpQClqQCprQShqPylpQShqQSlrPylpPypqQCtqPixtQCSAAABqQClrPylqQClqQClqQClqQSlrQSppPyhpQShqPyhrPyhpQClmPSlqQCsAAABqPylqQClqQCpqQClqQChqQClpQSlqPylqQSlrPyloQChpPypiOydpRCZqQShrPylrQiloPippPC1wQDBqQClpQChqQClqQClqQClpQClqQSlrQSppPyppQStqPyhsPihoQClqQClqQClqQClqQChqQChrQSlpQSlqPylqQSlrPylrQSlpPypqPixsQCZxORxqQClmTTNqQClqQClqQClqQClqQSlrPypmQCZqQSlrPyprQSppPypqPydsQChsPidrQSpqPytsQCdtPSRqQClqQClqQClpQClqQCprQShqPyhpQShqPylqQCtqQClqQCkAAAD9aLYqAAAAenRSTlMAB5kIBru95ASIk313+9/ev76enX5eXT08HRwC+Pnb2rqaenlaWTk4GRgB9fbX1re2lpV2dSBVDSJSUTIxERDw0M+vro+Obm1OTS0s7OvLyquqiolqaUpJKSgJ/gro58fGpqUUgoFiYUFAIVY1NBXz09KzspKRcnEw73lu0eUAAAABYktHRACIBR1IAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH5AoTBg0nXTSkcAAAAolJREFUeNrt2+kz1XEUx/Fv1hspS6EsyRJRQnFxLVGWQhSV0m6Lsofy1zPTgziTued8z+fM9OB8Hhvn9eDOb+783nNDwO3CUbplAK/9Y5kOcIADHKAAZGUDlpMWkHvqr7OEePgyHeAABzjAAQ5wgAMc8H8BEhf/Ls/uaN7Jv8+/9GeJc78hJwqs7hecf/TMLlsBrvDuh0IrQBETUGwFKGECrloB8pmAa1aAUiagzApQzgRctwLcYAIqKm3uV1UwAaHaBnCTez9k2wBq2IBbNgD+C5paG0AdG1BvA2hgA27bABrZgCYbwB02oLnF4v7dZjYg3LMAtPLvh/sWgDYBoN0C0CEAPLAAPBQAOrsM1ikA+Hy+kOyGLykC9OCfQ70iQAoP6BMB+vGAAdmHYBB9f1D4KXyEBgwJAcNowGMh4AkaMCIEjKIBY0LAOBrwVAh4hgZMCAFJNED2JD7ZJPb+lPR+eI4FTIsBM1jACzHgJRYwKwbMYQGvxIDXWMAbMWAeC3grBrxbQN5feC8GhA9IwEf5/fAJCfgcAfiCBHyNACwiv5MvRgB8Pl9I4d5PpaIAS7jn0HIUYAUHWI0CfMMB1qIA6zhA3DtKXMbnZns6WMbnZns6WMbnZns6WMbnZns6WMbnZns6WMbnZns6WMbnZns6WMbnZns6VMbnZ3s6UMbnZ3s6UMaviQaAMn787ypAGZ+f7elAGZ+f7elAGZ+f7elAGZ+f7ekwGV+S7ekgGV+S7ekgGb9NAYBkfEm2p4NkfEm2p/uOAHQpAD8QgA0FYBMBUL2e2dLf39LcD9t6wI4KsKsH7KkAP/WAfRXgQA84VAEAGV+W7en69IBfKgAg4wuzPd1v7f102f4YHafoQNyAPE4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMTAtMTlUMDY6MTM6MzkrMDA6MDCibWEHAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTEwLTE5VDA2OjEzOjM5KzAwOjAw0zDZuwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII="/>
+                        </defs>
+                        </svg> 
+                <h1>
+                    Coffee Shop
+                </h1> 
+            </div>
+            <div class="primary-menu"> 
+            <ul class="menu">
+                <li>Home</li>
+                <li>Produk</li>
+                <li>Your Cart</li>
+                <li>History</li>
+            </ul>
+            </div>
+            <div class="secondary-menu"> 
+                <ul class="menu">
+                    <li>
+                        <svg width="20" height="23" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33 33L25.75 25.75M29.6667 16.3333C29.6667 23.6971 23.6971 29.6667 16.3333 29.6667C8.96954 29.6667 3 23.6971 3 16.3333C3 8.96954 8.96954 3 16.3333 3C23.6971 3 29.6667 8.96954 29.6667 16.3333Z" stroke="#4F5665" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.5" cy="7.5" r="7.5" fill="#6A4029"/>
+                        <path d="M7.216 10C7.16267 10 7.11467 9.98133 7.072 9.944C7.03467 9.90133 7.016 9.85333 7.016 9.8V5.992L5.92 6.832C5.88267 6.864 5.84267 6.88 5.8 6.88C5.74133 6.88 5.688 6.848 5.64 6.784L5.168 6.168C5.14133 6.12533 5.128 6.08533 5.128 6.048C5.128 5.97333 5.16 5.91733 5.224 5.88L7.064 4.456C7.12267 4.41867 7.18667 4.4 7.256 4.4H8.256C8.31467 4.4 8.36267 4.41867 8.4 4.456C8.43733 4.49333 8.456 4.54133 8.456 4.6V9.8C8.456 9.85333 8.43733 9.90133 8.4 9.944C8.36267 9.98133 8.31467 10 8.256 10H7.216Z" fill="white"/>
+                        </svg>
+                        <img src="gambar/1.png"/>
+                    </li>
+                    <li>
+                        <img class="gambar" src="gambar/2.png"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!-- produk -->
+        <div class="grid-container">
+           <div>
+                <div class="gambar-menu">
+                    <img class="img" src="gambar/m1.png"/>
+                </div>
+                <div class="daftar-menu"> 
+                    <h1> Veggie tomato mix</h1> 
+                    <p>IDR 34.000</p> 
+                </div>
+            </div>
+            <div class="daftar-menu">
+                <img class="img" src="gambar/m1.png"/> 
+                <h1> Veggie tomato mix</h1> <p>IDR 34.000</p> 
+            </div>
+            <div class="daftar-menu"> 
+                <h1> Veggie tomato mix</h1> <p>IDR 34.000</p> 
+            </div>
+            <div class="daftar-menu"> 
+                <h1>Veggie tomato mix</h1> <p>IDR 34.000</p> 
+            </div>
+        </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
