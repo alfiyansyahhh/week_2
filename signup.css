@@ -15,6 +15,7 @@ body{
     background-color: white;
     display: flex;
 }
+
 .logos{
     width: 50%;
     display: flex;
@@ -27,36 +28,33 @@ body{
     margin-left: 10px;
     
 }
+
 .secondary-menus {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center; 
-}
-.secondary-menus {
     display: flex;
     list-style-type: none;
-}
-.secondary-menus {
     margin: 15px;
     font-size: 16px;
     cursor: pointer;
 }
+
 .secondary-menus a{
     text-decoration: none;
     font-weight: 600;
 }
 
-
-
-
-/* signup */
 .tulisan_signup{
     text-align: center;
     font-weight: bold;
     font-size: 35px;
     color: #6A4029;
 }
+
+
+/* signup */
 .kotak_signup{
     font-family: 'Rubik';
     width: 505px;
@@ -64,6 +62,16 @@ body{
     background: white;
     margin: 80px auto;
     padding: 30px 20px;
+    display: grid;
+    grid-template-areas: "atas"
+                         "bawah";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+form{
+    grid-area: atas;
 }
 
 .kotak_signup label{
@@ -72,35 +80,37 @@ body{
     font-weight: bold;
 }
 
-.kotak_signup input{
-    margin-top: 15px;
-}
+
 .form_login{
     font-family: 'Rubik';
     box-sizing : border-box;
     border: 1px solid #4F5665;
     width: 505px;
     height: 75px;
-    padding: 10px;
-    padding-left: 50px;
+    padding: 10px 50px;
     font-size: 26px;
     margin-bottom: 20px;
     border-radius: 20px;
     background: #FFFFFF;
     outline: 0;
-
 }
+
 ::-webkit-input-placeholder{
     position: absolute;
     color: #9F9F9F;
     font-size: 20px;
-    margin-left: 9px;
     margin-top: 15px;
+    margin-right: 20px;
+}
+
+.tombol{
+    grid-area: bawah;
 }
 
 .signup{
+    margin: 10px auto;
     background: #FFBA33;
-    box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+    box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
     border-radius: 20px;
     color: #6A4029;
     font-size: 20px;
@@ -108,26 +118,46 @@ body{
     width: 505px;
     height: 75px;
     border: none;
-    padding: 20px 30px;  
-    cursor: pointer;
-         
+    cursor: pointer;        
 }
+
 .google{
+    margin: 10px auto;
     background: white;
     color: black;
     font-size: 17px;
+    border: none;
+    margin: 30px auto;
     width: 505px;
     height: 75px;
     border: none;
     border-radius: 20px;
-    padding: 23px 30px;
     box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
     font-weight: bold;
-    cursor: pointer;
-
-    
+    cursor: pointer;   
 }
-p{
+
+.google img{
+    width: 6%;
+    float: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 0px;
+   
+}
+
+.google .tulisan{
+    margin: 25px;
+    margin-right: 90px;
+    margin-left: 0px;
+    display: flex;
+    float: right;
+    width: 50%;
+    font-size: 20px;
+}
+
+.ready{
+    padding-bottom: 10px;
     text-align: center;
     font-family: Rubik;
     font-style: normal;
@@ -136,9 +166,12 @@ p{
     line-height: 30px;
     color: #9F9F9F;
     cursor: pointer;
-
+    align-items: center;
 }
-.login{
+
+.login{ 
+    margin: 10px auto;
+    margin-bottom: 50px;
     background: #6A4029;
     color: white;
     font-size: 20px;
@@ -149,5 +182,13 @@ p{
     padding: 23px 30px;
     box-shadow: 0px 6px 20px rgba(196, 196, 196, 0.67);
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer;   
 }
+
+
+
+
+
+
+
+
