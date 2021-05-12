@@ -16,7 +16,7 @@
     grid-template-areas: "gambar"
                          "nama-menu harga";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
     justify-content: center;
     width: 156px;
